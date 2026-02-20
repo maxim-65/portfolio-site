@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Certificates | Rajanala Manohar Reddy" />
+  <title>Certificates | Rajanala Manohar Reddy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html" aria-label="Home">
+        <span class="logo-dot"></span>
+        <span>RMR</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="education.html">Education</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <a class="btn btn-ghost" href="Rajanala%20Manohar%20Reddy_InternshalaResume.pdf" target="_blank" rel="noreferrer">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Certificates</p>
+      <h1>Professional Credentials</h1>
+      <p class="lead">Verified certifications and skill badges from industry-leading platforms.</p>
+      
+      <div class="cert-filters">
+        <button class="btn btn-ghost filter-toggle">Filter Certificates</button>
+        <div class="filter-results" id="filterResults"></div>
+        <div class="filter-panel">
+          <div class="filter-group">
+            <h3>Sort By</h3>
+            <div class="filter-options">
+              <label><input type="radio" name="sort" value="default" data-sort="default" checked> Default</label>
+              <label><input type="radio" name="sort" value="alphabetical" data-sort="alphabetical"> Alphabetical</label>
+              <label><input type="radio" name="sort" value="level" data-sort="level"> Level</label>
+            </div>
+          </div>
+          <div class="filter-group">
+            <h3>Organization</h3>
+            <div class="filter-options">
+              <label><input type="checkbox" value="edunet" data-filter="organization"> EduNet Internship</label>
+              <label><input type="checkbox" value="great-learning" data-filter="organization"> Great Learning</label>
+              <label><input type="checkbox" value="infosis" data-filter="organization"> Infosis Springboard</label>
+              <label><input type="checkbox" value="microsoft" data-filter="organization"> Microsoft Azure AI</label>
+              <label><input type="checkbox" value="google" data-filter="organization"> Google Cloud Skills</label>
+              <label><input type="checkbox" value="sofzenix" data-filter="organization"> Sofzenix IT Solutions</label>
+            </div>
+          </div>
+          <div class="filter-group">
+            <h3>Level</h3>
+            <div class="filter-options">
+              <label><input type="checkbox" value="beginner" data-filter="level"> Beginner</label>
+              <label><input type="checkbox" value="intermediate" data-filter="level"> Intermediate</label>
+              <label><input type="checkbox" value="advanced" data-filter="level"> Advanced</label>
+              <label><input type="checkbox" value="internship" data-filter="level"> Internship</label>
+            </div>
+          </div>
+          <div class="filter-group">
+            <h3>Type</h3>
+            <div class="filter-options">
+              <label><input type="checkbox" value="certification" data-filter="type"> Certification</label>
+              <label><input type="checkbox" value="course-completion" data-filter="type"> Course Completion</label>
+              <label><input type="checkbox" value="cloud-badge" data-filter="type"> Cloud Badge</label>
+              <label><input type="checkbox" value="internship" data-filter="type"> Internship</label>
+              <label><input type="checkbox" value="offer" data-filter="type"> Offer Letter</label>
+              <label><input type="checkbox" value="ai-fundamentals" data-filter="type"> AI Fundamentals</label>
+              <label><input type="checkbox" value="company-document" data-filter="type"> Company Document</label>
+            </div>
+          </div>
+          <div class="filter-actions">
+            <button class="btn btn-ghost btn-sm" id="resetFilters">Reset All</button>
+            <button class="btn btn-ghost btn-sm" id="applyFilters">Apply Filters</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="cert-platforms">
+        <details class="cert-platform" open>
+          <summary class="cert-platform-title">EduNet Internship</summary>
+          <div class="cert-list">
+            <div class="cert-item" data-level="internship" data-type="certification" data-organization="edunet"><h4>Certificate of Completion</h4><a href="certificates/edunet%20internship/CERTIFICATE%20OF%20COMPLETION.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="internship" data-type="offer" data-organization="edunet"><h4>Internship Offer Letter</h4><a href="certificates/edunet%20internship/Internship%20Offer%20Letter.pdf" target="_blank" class="cert-link">View</a></div>
+          </div>
+        </details>
+        <details class="cert-platform" open>
+          <summary class="cert-platform-title">Great Learning</summary>
+          <div class="cert-list">
+            <div class="cert-item" data-level="beginner" data-type="certification" data-organization="great-learning"><h4>HTML Certification</h4><a href="certificates/great%20learning/Great%20learning%20HTML.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="beginner" data-type="certification" data-organization="great-learning"><h4>CSS Certification</h4><a href="certificates/great%20learning/Great%20learning%20CSS%20.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="intermediate" data-type="certification" data-organization="great-learning"><h4>Java Programming</h4><a href="certificates/great%20learning/Great%20Learning%20Java%20Programming%20.pdf" target="_blank" class="cert-link">View</a></div>
+          </div>
+        </details>
+        <details class="cert-platform" open>
+          <summary class="cert-platform-title">Infosis Springboard</summary>
+          <div class="cert-list">
+            <div class="cert-item" data-level="beginner" data-type="course-completion" data-organization="infosis"><h4>Basics of Python</h4><a href="certificates/infosis%20springboard/Basics%20of%20Python.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="beginner" data-type="course-completion" data-organization="infosis"><h4>Programming Fundamentals Python - Part 1</h4><a href="certificates/infosis%20springboard/Programming%20Fundamentals%20using%20Python%20-%20Part%201.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="intermediate" data-type="course-completion" data-organization="infosis"><h4>Programming Fundamentals Python - Part 2</h4><a href="certificates/infosis%20springboard/Programming%20Fundamentals%20using%20Python%20-%20Part%202.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="intermediate" data-type="course-completion" data-organization="infosis"><h4>Object Oriented Programming Python</h4><a href="certificates/infosis%20springboard/Object%20Oriented%20Programming%20using%20Python.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="intermediate" data-type="certification" data-organization="infosis"><h4>Python Foundation Certificate</h4><a href="certificates/infosis%20springboard/Python%20Foundation%20Certificate.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="intermediate" data-type="course-completion" data-organization="infosis"><h4>Introduction to Data Science</h4><a href="certificates/infosis%20springboard/Introduction%20to%20Data%20Science.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="intermediate" data-type="course-completion" data-organization="infosis"><h4>Intro to NLP</h4><a href="certificates/infosis%20springboard/Introduction%20to%20Natural%20Language%20Processing.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="intermediate" data-type="course-completion" data-organization="infosis"><h4>Database Management Part 1</h4><a href="certificates/infosis%20springboard/Database%20Management%20System%20Part%20-%201.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="intermediate" data-type="course-completion" data-organization="infosis"><h4>Database Management Part 2</h4><a href="certificates/infosis%20springboard/Database%20Management%20System%20Part%20-%202.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="intermediate" data-type="course-completion" data-organization="infosis"><h4>NoSQL Databases</h4><a href="certificates/infosis%20springboard/Introduction%20to%20NoSQL%20databases.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="advanced" data-type="course-completion" data-organization="infosis"><h4>Multidimensional Data Modeling</h4><a href="certificates/infosis%20springboard/Multidimensional%20Data%20Modeling.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="intermediate" data-type="course-completion" data-organization="infosis"><h4>Agile Scrum</h4><a href="certificates/infosis%20springboard/Agile%20Scrum%20in%20Practice.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="intermediate" data-type="course-completion" data-organization="infosis"><h4>Software Engineering & Agile</h4><a href="certificates/infosis%20springboard/Software%20Engineering%20and%20Agile%20software%20development.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="beginner" data-type="course-completion" data-organization="infosis"><h4>High Impact Presentations</h4><a href="certificates/infosis%20springboard/High%20Impact%20Presentations.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="beginner" data-type="course-completion" data-organization="infosis"><h4>Email Writing Skills</h4><a href="certificates/infosis%20springboard/Email%20Writing%20Skills.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="beginner" data-type="course-completion" data-organization="infosis"><h4>Time Management</h4><a href="certificates/infosis%20springboard/Time%20Management.pdf" target="_blank" class="cert-link">View</a></div>
+          </div>
+        </details>
+        <details class="cert-platform" open>
+          <summary class="cert-platform-title">Microsoft Azure AI</summary>
+          <div class="cert-list">
+            <div class="cert-item" data-level="beginner" data-type="ai-fundamentals" data-organization="microsoft"><h4>Explore AI for All</h4><a href="certificates/learn.microsoft/Explore%20AI%20for%20All.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="beginner" data-type="ai-fundamentals" data-organization="microsoft"><h4>AI Fundamentals - AI Overview</h4><a href="certificates/learn.microsoft/Microsoft%20Azure%20AI%20Fundamentals%20AI%20Overview.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="beginner" data-type="ai-fundamentals" data-organization="microsoft"><h4>AI Fundamentals - Computer Vision</h4><a href="certificates/learn.microsoft/Microsoft%20Azure%20AI%20Fundamentals%20Computer%20Vision.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="beginner" data-type="ai-fundamentals" data-organization="microsoft"><h4>AI Fundamentals - Natural Language</h4><a href="certificates/learn.microsoft/Microsoft%20Azure%20AI%20Fundamentals%20Natural%20Language.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="beginner" data-type="ai-fundamentals" data-organization="microsoft"><h4>AI Fundamentals - Document Intelligence</h4><a href="certificates/learn.microsoft/Microsoft%20Azure%20AI%20Fundamentals%20Document%20Intelligence%20and%20Knowledge%20Mining.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="beginner" data-type="ai-fundamentals" data-organization="microsoft"><h4>AI Fundamentals - Generative AI</h4><a href="certificates/learn.microsoft/Microsoft%20Azure%20AI%20Fundamentals%20Generative%20AI.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="intermediate" data-type="certification" data-organization="microsoft"><h4>Custom Vision</h4><a href="certificates/learn.microsoft/Create%20vision%20models%20with%20Azure%20AI%20Custom%20Vision.pdf" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="advanced" data-type="certification" data-organization="microsoft"><h4>Generative AI Models</h4><a href="certificates/learn.microsoft/Work%20with%20generative%20artificial%20intelligence%20(AI)%20models.pdf" target="_blank" class="cert-link">View</a></div>
+          </div>
+        </details>
+        <details class="cert-platform" open>
+          <summary class="cert-platform-title">Google Cloud Skills (80+ Badges)</summary>
+          <div class="cert-list" id="gcp-badges">
+            <div class="cert-item" data-level="advanced" data-type="cloud-badge" data-index="0" data-organization="google"><h4>Analyze and reason on multimodal data with Gemini</h4><a href="certificates/skills.google/analyze-and-reason-on-multimodal-data-with-gemini.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="intermediate" data-type="cloud-badge" data-index="1" data-organization="google"><h4>Analyze and visualize Looker data</h4><a href="certificates/skills.google/analyze-and-visualize-looker-data-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="intermediate" data-type="cloud-badge" data-index="2" data-organization="google"><h4>Analyze BigQuery data in Connected Sheets</h4><a href="certificates/skills.google/analyze-bigquery-data-in-connected-sheets-skill-bad.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="beginner" data-type="cloud-badge" data-index="3" data-organization="google"><h4>Analyze images with Cloud Vision API</h4><a href="certificates/skills.google/analyze-images-with-the-cloud-vision-api-skill-badg.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="beginner" data-type="cloud-badge" data-index="4" data-organization="google"><h4>Analyze sentiment with Natural Language API</h4><a href="certificates/skills.google/analyze-sentiment-with-natural-language-api-skill-b.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="beginner" data-type="cloud-badge" data-index="5" data-organization="google"><h4>Analyze speech and language with Google APIs</h4><a href="certificates/skills.google/analyze-speech-and-language-with-google-apis-skill-.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="6" data-organization="google"><h4>App building with AppSheet</h4><a href="certificates/skills.google/app-building-with-appsheet-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="7" data-organization="google"><h4>App Engine 3 Ways</h4><a href="certificates/skills.google/app-engine-3-ways-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="8" data-organization="google"><h4>Automate data capture at scale with Document AI</h4><a href="certificates/skills.google/automate-data-capture-at-scale-with-document-ai-ski.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="9" data-organization="google"><h4>Build a data mesh with Dataplex</h4><a href="certificates/skills.google/build-a-data-mesh-with-dataplex-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="10" data-organization="google"><h4>Build a data warehouse with BigQuery</h4><a href="certificates/skills.google/build-a-data-warehouse-with-bigquery-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="11" data-organization="google"><h4>Build a secure Google Cloud network</h4><a href="certificates/skills.google/build-a-secure-google-cloud-network-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="12" data-organization="google"><h4>Build a website on Google Cloud</h4><a href="certificates/skills.google/build-a-website-on-google-cloud-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="13" data-organization="google"><h4>Build Google Cloud infrastructure for AWS professionals</h4><a href="certificates/skills.google/build-google-cloud-infrastructure-for-aws-professio.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="14" data-organization="google"><h4>Build infrastructure with Terraform on Google Cloud</h4><a href="certificates/skills.google/build-infrastructure-with-terraform-on-google-cloud.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="15" data-organization="google"><h4>Build LookML objects in Looker</h4><a href="certificates/skills.google/build-lookml-objects-in-looker-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="16" data-organization="google"><h4>Build real-world AI applications with Gemini</h4><a href="certificates/skills.google/build-real-world-ai-applications-with-gemini-and-im.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="17" data-organization="google"><h4>Classify images with TensorFlow on Google Cloud</h4><a href="certificates/skills.google/classify-images-with-tensorflow-on-google-cloud.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="18" data-organization="google"><h4>Cloud architecture design, implement and manage</h4><a href="certificates/skills.google/cloud-architecture-design-implement-and-manage-skil.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="19" data-organization="google"><h4>Cloud Functions 3 Ways</h4><a href="certificates/skills.google/cloud-functions-3-ways-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="20" data-organization="google"><h4>Cloud Speech API 3 Ways</h4><a href="certificates/skills.google/cloud-speech-api-3-ways-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="21" data-organization="google"><h4>Configure service accounts and IAM roles</h4><a href="certificates/skills.google/configure-service-accounts-and-iam-roles-for-google.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="22" data-organization="google"><h4>Connecting Cloud networks with NCC</h4><a href="certificates/skills.google/connecting-cloud-networks-with-ncc.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="23" data-organization="google"><h4>Create a secure data lake on Cloud Storage</h4><a href="certificates/skills.google/create-a-secure-data-lake-on-cloud-storage-skill-ba.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="24" data-organization="google"><h4>Create a streaming data lake on Cloud Storage</h4><a href="certificates/skills.google/create-a-streaming-data-lake-on-cloud-storage-skill.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="25" data-organization="google"><h4>Create and manage AlloyDB instances</h4><a href="certificates/skills.google/create-and-manage-alloydb-instances-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="26" data-organization="google"><h4>Create and manage BigTable instances</h4><a href="certificates/skills.google/create-and-manage-bigtable-instances-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="27" data-organization="google"><h4>Create and manage Cloud Spanner instances</h4><a href="certificates/skills.google/create-and-manage-cloud-spanner-instances-skill-bad.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="28" data-organization="google"><h4>Create and manage Cloud SQL for PostgreSQL</h4><a href="certificates/skills.google/create-and-manage-cloud-sql-for-postgresql-instance.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="29" data-organization="google"><h4>Create ML models with BigQuery ML</h4><a href="certificates/skills.google/create-ml-models-with-bigquery-ml-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="30" data-organization="google"><h4>Deploy and manage Apigee X</h4><a href="certificates/skills.google/deploy-and-manage-apigee-x-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="31" data-organization="google"><h4>Deploy Kubernetes applications on Google Cloud</h4><a href="certificates/skills.google/deploy-kubernetes-applications-on-google-cloud-skil.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="32" data-organization="google"><h4>Derive insights from BigQuery data</h4><a href="certificates/skills.google/derive-insights-from-bigquery-data-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="33" data-organization="google"><h4>Develop and secure APIs with Apigee X</h4><a href="certificates/skills.google/develop-and-secure-apis-with-apigee-x-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="34" data-organization="google"><h4>Develop GenAI apps with Gemini and Streamlit</h4><a href="certificates/skills.google/develop-genai-apps-with-gemini-and-streamlit-skill-.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="35" data-organization="google"><h4>Develop serverless applications on Cloud Run</h4><a href="certificates/skills.google/develop-serverless-applications-on-cloud-run-skill-.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="36" data-organization="google"><h4>Develop serverless apps with Firebase</h4><a href="certificates/skills.google/develop-serverless-apps-with-firebase-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="37" data-organization="google"><h4>Develop with Apps Script and AppSheet</h4><a href="certificates/skills.google/develop-with-apps-script-and-appsheet-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="38" data-organization="google"><h4>Develop your Google Cloud network</h4><a href="certificates/skills.google/develop-your-google-cloud-network-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="39" data-organization="google"><h4>Discover and protect sensitive data</h4><a href="certificates/skills.google/discover-and-protect-sensitive-data-across-your-eco.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="40" data-organization="google"><h4>Engineer data for predictive modeling with BigQuery</h4><a href="certificates/skills.google/engineer-data-for-predictive-modeling-with-bigquery.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="41" data-organization="google"><h4>Enhance Gemini model capabilities</h4><a href="certificates/skills.google/enhance-gemini-model-capabilities.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="42" data-organization="google"><h4>Enrich metadata and discovery of BigLake data</h4><a href="certificates/skills.google/enrich-metadata-and-discovery-of-biglake-data.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="43" data-organization="google"><h4>Explore generative AI with Vertex AI Gemini API</h4><a href="certificates/skills.google/explore-generative-ai-with-the-vertex-ai-gemini-api.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="44" data-organization="google"><h4>Get started with API Gateway</h4><a href="certificates/skills.google/get-started-with-api-gateway-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="45" data-organization="google"><h4>Get started with Cloud Storage</h4><a href="certificates/skills.google/get-started-with-cloud-storage-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="46" data-organization="google"><h4>Get started with Dataplex</h4><a href="certificates/skills.google/get-started-with-dataplex-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="47" data-organization="google"><h4>Get started with Eventarc</h4><a href="certificates/skills.google/get-started-with-eventarc-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="48" data-organization="google"><h4>Get started with Google Workspace tools</h4><a href="certificates/skills.google/get-started-with-google-workspace-tools-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="49" data-organization="google"><h4>Get started with Looker</h4><a href="certificates/skills.google/get-started-with-looker-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="50" data-organization="google"><h4>Get started with Pub/Sub</h4><a href="certificates/skills.google/get-started-with-pub-sub-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="51" data-organization="google"><h4>Implement CI/CD pipelines on Google Cloud</h4><a href="certificates/skills.google/implement-ci-cd-pipelines-on-google-cloud-skill-bad.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="52" data-organization="google"><h4>Implement cloud security fundamentals</h4><a href="certificates/skills.google/implement-cloud-security-fundamentals-on-google-clo.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="53" data-organization="google"><h4>Implement DevOps workflows in Google Cloud</h4><a href="certificates/skills.google/implement-devops-workflows-in-google-cloud-skill-ba.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="54" data-organization="google"><h4>Implement load balancing on Compute Engine</h4><a href="certificates/skills.google/implement-load-balancing-on-compute-engine-skill-ba.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="55" data-organization="google"><h4>Implement multimodal vector search with BigQuery</h4><a href="certificates/skills.google/implement-multimodal-vector-search-with-bigquery.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="56" data-organization="google"><h4>Inspect rich documents with Gemini multimodality</h4><a href="certificates/skills.google/inspect-rich-documents-with-gemini-multimodality-an.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="57" data-organization="google"><h4>Integrate BigQuery data and Google Workspace</h4><a href="certificates/skills.google/integrate-bigquery-data-and-google-workspace-using-.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="58" data-organization="google"><h4>Manage data models in Looker</h4><a href="certificates/skills.google/manage-data-models-in-looker-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="59" data-organization="google"><h4>Manage Kubernetes in Google Cloud</h4><a href="certificates/skills.google/manage-kubernetes-in-google-cloud-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="60" data-organization="google"><h4>Migrate MySQL data to Cloud SQL</h4><a href="certificates/skills.google/migrate-mysql-data-to-cloud-sql-using-database-migr.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="61" data-organization="google"><h4>Mitigate threats and vulnerabilities</h4><a href="certificates/skills.google/mitigate-threats-and-vulnerabilities-with-security-.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="62" data-organization="google"><h4>Monitor and log with Google Cloud Operations</h4><a href="certificates/skills.google/monitor-and-log-with-google-cloud-operations-suite-.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="63" data-organization="google"><h4>Monitor and manage Google Cloud resources</h4><a href="certificates/skills.google/monitor-and-manage-google-cloud-resources-skill-bad.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="64" data-organization="google"><h4>Monitor environments with managed services</h4><a href="certificates/skills.google/monitor-environments-with-google-cloud-managed-serv.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="65" data-organization="google"><h4>Monitoring in Google Cloud</h4><a href="certificates/skills.google/monitoring-in-google-cloud-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="66" data-organization="google"><h4>Optimize costs for Google Kubernetes Engine</h4><a href="certificates/skills.google/optimize-costs-for-google-kubernetes-engine-skill-b.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="67" data-organization="google"><h4>Perform predictive data analysis in BigQuery</h4><a href="certificates/skills.google/perform-predictive-data-analysis-in-bigquery-skill-.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="68" data-organization="google"><h4>Prepare data for ML APIs on Google Cloud</h4><a href="certificates/skills.google/prepare-data-for-ml-apis-on-google-cloud-skill-badg.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="69" data-organization="google"><h4>Prompt design in Vertex AI</h4><a href="certificates/skills.google/prompt-design-in-vertex-ai-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="70" data-organization="google"><h4>Protect cloud traffic with BeyondCorp Enterprise</h4><a href="certificates/skills.google/protect-cloud-traffic-with-beyondcorp-enterprise-bc.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="71" data-organization="google"><h4>Protect sensitive data with Data Loss Prevention</h4><a href="certificates/skills.google/protect-sensitive-data-with-data-loss-prevention-sk.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="72" data-organization="google"><h4>Secure BigLake data</h4><a href="certificates/skills.google/secure-biglake-data-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="advanced" data-type="cloud-badge" data-index="73" data-organization="google"><h4>Secure software delivery</h4><a href="certificates/skills.google/secure-software-delivery-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="74" data-organization="google"><h4>Set up a Google Cloud network</h4><a href="certificates/skills.google/set-up-a-google-cloud-network-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="75" data-organization="google"><h4>Set up an app dev environment on Google Cloud</h4><a href="certificates/skills.google/set-up-an-app-dev-environment-on-google-cloud-skill.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="76" data-organization="google"><h4>Share data using Google Data Cloud</h4><a href="certificates/skills.google/share-data-using-google-data-cloud-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="77" data-organization="google"><h4>Store, process and manage data on Google Cloud</h4><a href="certificates/skills.google/store-process-and-manage-data-on-google-cloud-comma.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="intermediate" data-type="cloud-badge" data-index="78" data-organization="google"><h4>Streaming analytics into BigQuery</h4><a href="certificates/skills.google/streaming-analytics-into-bigquery-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="79" data-organization="google"><h4>The basics of Google Cloud Compute</h4><a href="certificates/skills.google/the-basics-of-google-cloud-compute-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="80" data-organization="google"><h4>Use APIs to work with Cloud Storage</h4><a href="certificates/skills.google/use-apis-to-work-with-cloud-storage-skill-badge.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="81" data-organization="google"><h4>Use functions, formulas and charts in Google Sheets</h4><a href="certificates/skills.google/use-functions-formulas-and-charts-in-google-sheets-.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="82" data-organization="google"><h4>Use machine learning APIs on Google Cloud</h4><a href="certificates/skills.google/use-machine-learning-apis-on-google-cloud-skill-bad.png" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item badge-hidden" data-level="beginner" data-type="cloud-badge" data-index="83" data-organization="google"><h4>Using the Google Cloud Speech API</h4><a href="certificates/skills.google/using-the-google-cloud-speech-api.png" target="_blank" class="cert-link">View</a></div>
+          </div>
+          <div style="text-align: center; margin-top: 24px; margin-bottom: 16px;">
+            <button class="btn btn-ghost" id="gcp-toggle" onclick="toggleGCPBadges()">Show More (78 More)</button>
+          </div>
+        </details>
+        <details class="cert-platform" open>
+          <summary class="cert-platform-title">Sofzenix IT Solutions</summary>
+          <div class="cert-list">
+            <div class="cert-item" data-level="internship" data-type="company-document" data-organization="sofzenix"><h4>Employee ID Card</h4><a href="certificates/Sofzenix%20IT%20Solutions%20LLP/ID_Card.jpg" target="_blank" class="cert-link">View</a></div>
+            <div class="cert-item" data-level="internship" data-type="offer" data-organization="sofzenix"><h4>Offer Letter</h4><a href="certificates/Sofzenix%20IT%20Solutions%20LLP/rajanal%20manohar%20reddy%20offer%20letter.jpg" target="_blank" class="cert-link">View</a></div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <div class="back-to-home-section">
+      <a class="btn btn-ghost" href="index.html">Back to Home</a>
+    </div>
+
+    <dialog id="certModal" class="cert-modal">
+      <div class="cert-modal-content">
+        <div class="cert-modal-header">
+          <h2 id="modalTitle"></h2>
+          <div class="cert-modal-actions">
+            <a id="certOriginalLink" href="#" target="_blank" class="btn btn-ghost btn-sm">View Original Certificate</a>
+            <button class="cert-modal-close" data-close="cert-modal">×</button>
+          </div>
+        </div>
+        <div class="cert-modal-body">
+          <div id="certPreview"></div>
+        </div>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="footer">
+    <span>� <span id="year"></span> Rajanala Manohar Reddy</span>
+  </footer>
+</body>
+</html>
