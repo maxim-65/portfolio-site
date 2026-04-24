@@ -10,7 +10,9 @@ The portfolio is built as a static website using:
 - JavaScript
 
 ## Live Site
-The website is intended to be hosted as a static portfolio and can be opened locally or deployed on a static hosting platform.
+The portfolio is live at: https://rajanala-maohar.netlify.app/
+
+The website is also intended to be hosted as a static portfolio and can be opened locally or deployed on a static hosting platform.
 
 ## Key Sections
 
