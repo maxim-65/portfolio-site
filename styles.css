@@ -658,6 +658,18 @@ main {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.project-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.project-links .btn {
+  font-size: 0.85rem;
+  padding: 8px 16px;
+}
+
 .contact-card {
   display: grid;
   gap: 14px;
